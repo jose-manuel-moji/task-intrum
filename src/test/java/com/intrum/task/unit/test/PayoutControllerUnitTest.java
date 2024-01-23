@@ -1,4 +1,4 @@
-package com.intrum.task;
+package com.intrum.task.unit.test;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +15,7 @@ import com.intrum.task.data.entities.PayoutEntity;
 import com.intrum.task.data.service.PayoutService;
 
 @ExtendWith(MockitoExtension.class)
-public class PayoutControllerIntegrationTest {
+public class PayoutControllerUnitTest {
 
     @InjectMocks
     private PayoutController controller;

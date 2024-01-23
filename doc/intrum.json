@@ -1,0 +1,61 @@
+{
+  "info": {
+    "name": "intrum",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "payout",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "disabled": false,
+            "type": "default"
+          }
+        ],
+        "url": "http://intrum.mocklab.io/payout",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"companyIdentityNumber\": \"557-3562662\",\n  \"paymentDate\": \"2022-05-01\",\n  \"paymentAmount\": 9999\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "local - payout",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "http://localhost:8080/intrum/payout",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"companyIdentityNumber\": \"557-3562662\",\n  \"paymentDate\": \"2022-05-01\",\n  \"paymentAmount\": 9999\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "status",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/intrum/payout"
+      }
+    }
+  ],
+  "variable": []
+}
