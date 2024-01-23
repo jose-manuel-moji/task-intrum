@@ -107,8 +107,8 @@ public class ReadFilesService {
 	    	
 	}
 	
-	@Scheduled(fixedRate = 5000)
-	//@Scheduled(cron = "0 */5 0-4 * * *")
+	//@Scheduled(fixedRate = 5000)
+	@Scheduled(cron = "0 */5 0-4 * * *")
 	public void scheduler() {
 		
 		logger.info("Scheduling");
